@@ -1,0 +1,50 @@
+
+// Transição slide-fade
+
+.slide-fade-enter-active
+  transition: all 0.3s ease
+
+.slide-fade-leave-active
+  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1)
+
+.slide-fade-enter,
+.slide-fade-leave-to
+  transform: translateY(10px)
+  opacity: 0
+
+
+// Transição login
+
+.form-login
+  height: 100vh
+  width: 650px
+  padding: 50px
+
+.slide-left-fade-enter-active
+  transition: all 0.8s ease
+
+.slide-left-fade-leave-active
+  transition: all 1s cubic-bezier(1, 0.5, 0.8, 1)
+
+.slide-left-fade-enter
+  width: 0px
+  padding: 0px
+
+.slide-left-fade-enter-to
+  width: 650px
+  padding: 50px
+
+.slide-left-fade-leave-to
+  width: 100%
+  padding: 50px
+
+
+// Transição fade
+
+.fade-enter-active,
+.fade-leave-active
+  transition: opacity 0.3s
+
+.fade-enter,
+.fade-leave-to
+  opacity: 0

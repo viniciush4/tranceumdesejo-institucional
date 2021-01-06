@@ -4,7 +4,7 @@
       <q-toolbar>
         <span class="text-h4 font-pacifico q-pl-lg" style="position: absolute; color: #c73d2a;">Trance um Desejo</span>
         <div class="full-width text-center">
-          <q-btn flat style="color: white" label="História" />
+          <q-btn flat style="color: white" label="História" @click="$router.push({ path: '/historia' })" />
           <q-btn flat style="color: white" label="Dicas para seu cabelinho" />
           <q-btn flat style="color: white" label="Pré-Agendamento" />
         </div>

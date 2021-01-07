@@ -2,8 +2,8 @@
   <q-layout view="lph Lpr lFf">
     <q-header class="bg-transparent q-py-lg">
       <q-toolbar>
-        <span class="text-h4 font-pacifico q-pl-lg" style="position: absolute; color: #c73d2a;">Trance um Desejo</span>
-        <div class="full-width text-center">
+        <q-img src="logo.svg" contain :style="this.$q.screen.width > 1100 ? {'max-width': '250px', position: 'absolute', 'margin-left': '20px'} : {'max-width': '150px', 'margin-left': '10px'}" />
+        <div class="full-width text-center" v-if="this.$q.screen.width > 1023">
           <q-btn flat style="color: white" label="História" @click="$router.push({ path: '/historia' })" />
           <q-btn flat style="color: white" label="Dicas para seu cabelinho" />
           <q-btn flat style="color: white" label="Pré-Agendamento" />
@@ -14,23 +14,29 @@
     <q-page-container>
       <q-page>
 
-        <!-- INÍCIO -->
-        <div class="row" style="margin-top: -98px;">
-          <div class="col-6 flex items-center" style="background-color: #1a2f34;">
-            <div class="text-white" style="margin-left: 150px">
-              <p class="text-h6 text-uppercase font-zurich q-mb-xl" style="line-height: 3rem;">Olá,</p>
-              <p class="text-h1 font-plantin" style="line-height: 3rem;">Meninas</p>
-              <p style="line-height: 3rem;">
-                <span class="text-h1 font-plantin-bq text-italic">e</span>
-                <span class="text-h1 font-plantin q-ml-lg">Meninos</span>
-              </p>
-              <div style="padding: 50px 100px 0 100px" >
-                sejam muito bem-vindos ao meu website. Já preparem o café e venham conhecer um pouquinho da minha história e de como tudo surgiu
-              </div>
+        <!-- INÍCIO (WEB)-->
+        <div class="row" style="margin-top: -98px;" v-if="this.$q.screen.width > 1023">
+          <div class="col-6 column flex justify-center items-center" style="background-color: #1a2f34;">
+            <q-img src="principal/saudacao.svg" contain style="max-width: 400px; width: 60%" />
+            <div class="text-white" style="max-width: 400px; width: 60%; margin-left: 100px; margin-top: 40px">
+              sejam muito bem-vindos ao meu website. Já preparem o café e venham conhecer um pouquinho da minha história e de como tudo surgiu
             </div>
           </div>
           <div class="col-6">
             <q-img src="principal/banner.jpeg" :ratio="1" style="filter: grayscale(.9);"></q-img>
+          </div>
+        </div>
+
+        <!-- INÍCIO (MOBILE)-->
+        <div class="row" style="margin-top: -98px;" v-if="this.$q.screen.width <= 1023">
+          <div class="col-12">
+            <q-img src="principal/banner.jpeg" :ratio="1" style="filter: grayscale(.9);" />
+<!--            <div class="column flex justify-center items-center" style="position: absolute; background-color: #1a2f34;">-->
+<!--              <q-img src="principal/saudacao.svg" contain style="max-width: 400px; width: 60%" />-->
+<!--              <div class="text-white" style="max-width: 400px; width: 60%; margin-left: 100px; margin-top: 40px">-->
+<!--                sejam muito bem-vindos ao meu website. Já preparem o café e venham conhecer um pouquinho da minha história e de como tudo surgiu-->
+<!--              </div>-->
+<!--            </div>-->
           </div>
         </div>
 
@@ -67,8 +73,8 @@
         <div class="row justify-center q-px-md" style="width: 100%;">
           <div class="flex row q-pb-xl q-col-gutter-lg" style="max-width: 1140px; width: 100%; padding: 100px 0;">
             <div class="col-lg-5 col-md-5 q-mb-xl">
-              <span class="text-h4 font-pacifico" style="color: #c73d2a;">Trance um Desejo</span>
-              <p class="q-mt-lg" style="font-weight: 400; font-size: 0.75rem; line-height: 26.16px; color: #8C92A2; max-width: 303px;">
+              <q-img src="logo.svg" contain style="max-width: 250px;" />
+              <p class="q-mt-md" style="font-weight: 400; font-size: 0.75rem; line-height: 26.16px; color: #8C92A2; max-width: 303px;">
                 Meu nome é Emily Brandão e, caso não conheça meu trabalho,
                 meu instragram se chama Trance Um Desejo (@tranceumdesejo),
                 para que você possa conhecer e se sentir mais segura(o)

@@ -8,8 +8,8 @@
           <q-btn flat style="color: white" label="Dicas para seu cabelinho" />
           <q-btn flat style="color: white" label="Pré-Agendamento" />
         </div>
-        <q-space />
-        <q-btn flat round style="color: white; margin-right: 10px" icon="menu" @click="drawer = !drawer" />
+        <q-space v-if="this.$q.screen.width <= 1023" />
+        <q-btn flat round style="color: white; margin-right: 10px" icon="menu" @click="drawer = !drawer" v-if="this.$q.screen.width <= 1023" />
       </q-toolbar>
     </q-header>
 

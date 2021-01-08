@@ -28,16 +28,14 @@
         </div>
 
         <!-- INÍCIO (MOBILE)-->
-        <div class="row" style="margin-top: -98px;" v-if="this.$q.screen.width <= 1023">
+        <div style="margin-top: -98px;" v-if="this.$q.screen.width <= 1023">
           <div class="col-12">
-            <q-img src="principal/banner.jpeg" :ratio="1" style="filter: grayscale(.9);" />
-<!--            <div class="column flex justify-center items-center" style="position: absolute; background-color: #1a2f34;">-->
-<!--              <q-img src="principal/saudacao.svg" contain style="max-width: 400px; width: 60%" />-->
-<!--              <div class="text-white" style="max-width: 400px; width: 60%; margin-left: 100px; margin-top: 40px">-->
-<!--                sejam muito bem-vindos ao meu website. Já preparem o café e venham conhecer um pouquinho da minha história e de como tudo surgiu-->
-<!--              </div>-->
-<!--            </div>-->
+            <q-img src="principal/banner.jpeg" style="filter: grayscale(.9);" class="shadow-10" />
+            <q-img src="principal/saudacao.svg" contain style="position: absolute; top: 300px; left: 10%; width: 80%" />
           </div>
+        </div>
+        <div class="text-white bg-primary q-pa-xl">
+          sejam muito bem-vindos ao meu website. Já preparem o café e venham conhecer um pouquinho da minha história e de como tudo surgiu
         </div>
 
         <!-- INSTAGRAM -->

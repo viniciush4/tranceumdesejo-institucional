@@ -8,8 +8,39 @@
           <q-btn flat style="color: white" label="Dicas para seu cabelinho" />
           <q-btn flat style="color: white" label="Pré-Agendamento" />
         </div>
+        <q-space />
+        <q-btn flat round style="color: white; margin-right: 10px" icon="menu" @click="drawer = !drawer" />
       </q-toolbar>
     </q-header>
+
+    <q-drawer
+      side="right"
+      v-model="drawer"
+      show-if-above
+      elevated
+      content-class="text-primary bg-primary q-py-lg"
+    >
+      <q-toolbar class="absolute">
+        <q-space />
+        <q-btn flat round style="color: white; margin-right: 10px" icon="close" @click="drawer = !drawer" />
+      </q-toolbar>
+      <div class="full-height flex justify-center column">
+        <div>
+          <div @click="$router.push({ path: '/historia' })">
+            <q-btn flat size="lg" style="color: white" label="História" />
+            <p class="text-white q-px-md">Conheça um pouquinho da minha trajetória até aqui</p>
+          </div>
+          <div class="q-mt-xl">
+            <q-btn flat size="lg" style="color: white" label="Dicas para seu cabelinho" />
+            <p class="text-white q-px-md">Vou te contar uns segredinhos que podem melhorar suas madeixas</p>
+          </div>
+          <div class="q-mt-xl">
+            <q-btn flat size="lg" style="color: white" label="Pré-Agendamento" />
+            <p class="text-white q-px-md">Quer agendar um atendimento comigo? Faça o pré-agendamento por aqui</p>
+          </div>
+        </div>
+      </div>
+    </q-drawer>
 
     <q-page-container>
       <q-page>
@@ -81,7 +112,7 @@
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 q-mb-xl">
               <p style="font-weight: 600; font-size: 1.125rem; line-height: 27px;" class="q-mb-lg">Institucional</p>
-              <p style="font-weight: 400; font-size: 0.94rem; line-height: 42px; color: #8C92A2; cursor: pointer;">História</p>
+              <p style="font-weight: 400; font-size: 0.94rem; line-height: 42px; color: #8C92A2; cursor: pointer;" @click="$router.push({ path: '/historia' })" >História</p>
               <p style="font-weight: 400; font-size: 0.94rem; line-height: 42px; color: #8C92A2; cursor: pointer;">Serviços</p>
               <p style="font-weight: 400; font-size: 0.94rem; line-height: 42px; color: #8C92A2; cursor: pointer;">Pré-agendamento</p>
               <p style="font-weight: 400; font-size: 0.94rem; line-height: 42px; color: #8C92A2; cursor: pointer;">Orientações para o atendimento</p>
@@ -118,7 +149,8 @@
 export default {
   data: function () {
     return {
-      fotosInstagram: ''
+      fotosInstagram: '',
+      drawer: false
     }
   },
 

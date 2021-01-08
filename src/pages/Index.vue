@@ -34,14 +34,14 @@
             <q-img src="principal/saudacao.svg" contain style="position: absolute; top: 300px; left: 10%; width: 80%" />
           </div>
         </div>
-        <div class="text-white bg-primary q-pa-xl">
+        <div class="text-white bg-primary q-pa-xl" v-if="this.$q.screen.width <= 1023">
           sejam muito bem-vindos ao meu website. Já preparem o café e venham conhecer um pouquinho da minha história e de como tudo surgiu
         </div>
 
         <!-- INSTAGRAM -->
         <div class="row bg-white q-pa-xl column flex items-center">
-          <p class="text-h3 font-plantin">@tranceumdesejo</p>
-          <div class="row q-col-gutter-lg q-mt-sm" style="max-width: 700px">
+          <p :class="this.$q.screen.width > 1023 ? 'text-h3 font-plantin' : 'text-h5 font-plantin'">@tranceumdesejo</p>
+          <div class="row q-col-gutter-xs q-mt-sm" style="max-width: 700px">
             <div class="col-4" v-for="foto in fotosInstagram" :key="foto.url">
               <q-card>
                 <img :src="foto.thumbnailUrl">
@@ -52,18 +52,18 @@
         </div>
 
         <!-- NÚMEROS EXPRESSIVOS -->
-        <div class="row bg-primary q-pa-xl text-white shadow-10">
+        <div :class="this.$q.screen.width > 1023 ? 'row bg-primary q-pa-xl text-white shadow-10' : 'row bg-primary q-pa-md text-white shadow-10'">
           <div class="col-4 text-center">
             <p class="text-subtitle1" style="line-height: 1rem">atendimentos realizados</p>
-            <p class="text-h1 font-pacifico" style="margin: -25px 0 -5px">+600</p>
+            <p :class="this.$q.screen.width > 1023 ? 'text-h1 font-pacifico' : 'text-h4 font-pacifico'" style="margin: -25px 0 -5px">+600</p>
           </div>
           <div class="col-4 text-center">
             <p class="text-subtitle1" style="line-height: 1rem">noivas atendidas</p>
-            <p class="text-h1 font-pacifico" style="margin: -25px 0 -5px">+50</p>
+            <p :class="this.$q.screen.width > 1023 ? 'text-h1 font-pacifico' : 'text-h4 font-pacifico'" style="margin: -25px 0 -5px">+50</p>
           </div>
           <div class="col-4 text-center">
             <p class="text-subtitle1" style="line-height: 1rem">cursos ministrados</p>
-            <p class="text-h1 font-pacifico" style="margin: -25px 0 -5px">+10</p>
+            <p :class="this.$q.screen.width > 1023 ? 'text-h1 font-pacifico' : 'text-h4 font-pacifico'" style="margin: -25px 0 -5px">+10</p>
           </div>
         </div>
 

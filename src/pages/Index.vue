@@ -27,15 +27,15 @@
       <div class="full-height flex justify-center column">
         <div>
           <div @click="$router.push({ path: '/historia' })">
-            <q-btn flat size="lg" style="color: white" label="História" />
+            <p class="text-uppercase text-white q-px-md text-h6">História</p>
             <p class="text-white q-px-md">Conheça um pouquinho da minha trajetória até aqui</p>
           </div>
           <div class="q-mt-xl">
-            <q-btn flat size="lg" style="color: white" label="Dicas para seu cabelinho" />
+            <p class="text-uppercase text-white q-px-md text-h6">Dicas para seu cabelinho</p>
             <p class="text-white q-px-md">Vou te contar uns segredinhos que podem melhorar suas madeixas</p>
           </div>
           <div class="q-mt-xl">
-            <q-btn flat size="lg" style="color: white" label="Pré-Agendamento" />
+            <p class="text-uppercase text-white q-px-md text-h6">Pré-Agendamento</p>
             <p class="text-white q-px-md">Quer agendar um atendimento comigo? Faça o pré-agendamento por aqui</p>
           </div>
         </div>

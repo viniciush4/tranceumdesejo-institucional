@@ -14,9 +14,9 @@
     </q-header>
 
     <q-drawer
+      v-if="this.$q.screen.width <= 1023"
       side="right"
       v-model="drawer"
-      show-if-above
       elevated
       content-class="text-primary bg-primary q-py-lg"
     >

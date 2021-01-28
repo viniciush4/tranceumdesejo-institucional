@@ -53,9 +53,13 @@
               sejam muito bem-vindos ao meu website. Já preparem o café e venham conhecer um pouquinho da minha história e de como tudo surgiu
             </div>
           </div>
-          <div class="col-6">
+          <!-- <div class="col-6">
             <q-img src="principal/banner.jpeg" :ratio="1" style="filter: grayscale(.9);"></q-img>
-          </div>
+          </div> -->
+          <video autoplay loop poster="principal/banner.jpeg" class="col-6 bg_video" style="filter: grayscale(.8); object-fit: cover; max-height: 700px">
+            <!-- <source src="videos/bg.webm" type="video/webm"> -->
+            <source src="principal/banner_video.mp4" type="video/mp4">
+          </video>
         </div>
 
         <!-- INÍCIO (MOBILE)-->

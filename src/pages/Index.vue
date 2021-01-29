@@ -182,6 +182,7 @@ export default {
   },
 
   created: async function () {
+    this.$q.addressbarColor.set('#1a2f34')
     try {
       const photos = await this.fetchInstagramPhotos('https://www.instagram.com/tranceumdesejo/')
       this.fotosInstagram = photos

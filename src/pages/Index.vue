@@ -56,9 +56,9 @@
           <!-- <div class="col-6">
             <q-img src="principal/banner.jpeg" :ratio="1" style="filter: grayscale(.9);"></q-img>
           </div> -->
-          <video autoplay loop muted class="col-6" style="filter: grayscale(.8); object-fit: cover; max-height: 700px">
+          <video autoplay loop muted class="col-6" style="filter: grayscale(.4); object-fit: cover; max-height: 700px">
             <source src="principal/banner_video.webm" type="video/webm">
-            <source src="principal/banner_video.mp4" type="video/mp4">
+            <!-- <source src="principal/banner_video.mp4" type="video/mp4"> -->
           </video>
         </div>
 

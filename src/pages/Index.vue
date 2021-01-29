@@ -65,11 +65,15 @@
         <!-- INÍCIO (MOBILE)-->
         <div style="margin-top: -98px;" v-if="this.$q.screen.width <= 1023">
           <div class="col-12">
-            <q-img src="principal/banner.jpeg" style="filter: grayscale(.9);" class="shadow-10" />
-            <q-img src="principal/saudacao.svg" contain style="position: absolute; top: 300px; left: 10%; width: 80%" />
+            <!-- <q-img src="principal/banner.jpeg" style="filter: grayscale(.9);" class="shadow-10" /> -->
+            <video autoplay loop muted style="filter: grayscale(.4); object-fit: cover;" class="full-width" >
+              <source src="principal/banner_video.webm" type="video/webm">
+              <!-- <source src="principal/banner_video.mp4" type="video/mp4"> -->
+            </video>
+            <q-img src="principal/saudacao.svg" contain style="position: absolute; top: 290px; left: 10%; width: 80%" />
           </div>
         </div>
-        <div class="text-white bg-primary q-pa-xl" v-if="this.$q.screen.width <= 1023">
+        <div class="text-white bg-primary q-pa-xl" style="margin-top: -10px" v-if="this.$q.screen.width <= 1023">
           sejam muito bem-vindos ao meu website. Já preparem o café e venham conhecer um pouquinho da minha história e de como tudo surgiu
         </div>
 

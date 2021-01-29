@@ -66,7 +66,7 @@
         <div style="margin-top: -98px;" v-if="this.$q.screen.width <= 1023">
           <div class="col-12">
             <!-- <q-img src="principal/banner.jpeg" style="filter: grayscale(.9);" class="shadow-10" /> -->
-            <video autoplay loop muted playsinline style="filter: grayscale(.4); object-fit: cover;" class="full-width" >
+            <video controls="true" autoplay loop muted playsinline style="filter: grayscale(.4); object-fit: cover;" class="full-width" >
               <source src="principal/banner_video.webm" type="video/webm">
               <!-- <source src="principal/banner_video.mp4" type="video/mp4"> -->
             </video>

@@ -68,7 +68,7 @@
             <!-- <q-img src="principal/banner.jpeg" style="filter: grayscale(.9);" class="shadow-10" /> -->
             <video controls="controls" autoplay loop muted playsinline style="filter: grayscale(.4); object-fit: cover;" class="full-width" >
               <source src="principal/banner_video.webm" type="video/webm">
-              <!-- <source src="principal/banner_video.mp4" type="video/mp4"> -->
+              <source src="principal/banner_video.mp4" type="video/mp4">
             </video>
             <q-img src="principal/saudacao.svg" contain style="position: absolute; top: 290px; left: 10%; width: 80%" />
           </div>

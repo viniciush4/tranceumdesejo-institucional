@@ -6,8 +6,8 @@
         <div class="full-width text-center" v-if="this.$q.screen.width > 1023">
           <q-btn flat style="color: white" label="Minha História" @click="$router.push({ path: '/historia' })" />
           <q-btn flat style="color: white" label="Penteados" />
-          <q-btn flat style="color: white" label="Pré-Agendamento" />
-          <q-btn flat style="color: white" label="Blog Capilar" />
+          <q-btn flat style="color: white" label="Pré-Agendamento" @click="$router.push({ path: '/pre-agendamento' })" />
+          <q-btn flat style="color: white" label="Blog" />
         </div>
         <q-space v-if="this.$q.screen.width <= 1023" />
         <q-btn flat round style="color: white; margin-right: 10px" icon="menu" @click="drawer = !drawer" v-if="this.$q.screen.width <= 1023" />
@@ -28,16 +28,20 @@
       <div class="full-height flex justify-center column">
         <div>
           <div @click="$router.push({ path: '/historia' })">
-            <p class="text-uppercase text-white q-px-md text-h6">História</p>
+            <p class="text-uppercase text-white q-px-md text-h6">Minha História</p>
             <p class="text-white q-px-md">Conheça um pouquinho da minha trajetória até aqui</p>
           </div>
-          <div class="q-mt-xl">
-            <p class="text-uppercase text-white q-px-md text-h6">Dicas para seu cabelinho</p>
+          <div class="q-mt-xl" @click="$router.push({ path: '/pre-agendamento' })">
+            <p class="text-uppercase text-white q-px-md text-h6">Penteados</p>
             <p class="text-white q-px-md">Vou te contar uns segredinhos que podem melhorar suas madeixas</p>
           </div>
           <div class="q-mt-xl">
             <p class="text-uppercase text-white q-px-md text-h6">Pré-Agendamento</p>
             <p class="text-white q-px-md">Quer agendar um atendimento comigo? Faça o pré-agendamento por aqui</p>
+          </div>
+          <div class="q-mt-xl">
+            <p class="text-uppercase text-white q-px-md text-h6">Blog</p>
+            <p class="text-white q-px-md">Vou te contar uns segredinhos que podem melhorar suas madeixas</p>
           </div>
         </div>
       </div>

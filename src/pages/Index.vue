@@ -79,7 +79,7 @@
           </div>
         </div>
         <div class="text-white bg-primary q-pa-xl" style="margin-top: -10px" v-if="this.$q.screen.width <= 1023">
-          sejam muito bem-vindos ao meu website. Já preparem o café e venham conhecer um pouquinho da minha história e de como tudo surgiu
+          Sejam muito bem-vindos ao meu website. Já preparem o café e venham conhecer um pouquinho da minha história e de como tudo surgiu
         </div>
 
         <!-- INSTAGRAM -->

@@ -55,7 +55,7 @@
           <div class="col-6 column flex justify-center items-center" style="background-color: #1a2f34;">
             <q-img src="principal/saudacao.svg" contain style="max-width: 400px; width: 60%" />
             <div class="text-white" style="max-width: 400px; width: 60%; margin-left: 100px; margin-top: 40px">
-              sejam muito bem-vindos ao meu website. Já preparem o café e venham conhecer um pouquinho da minha história e de como tudo surgiu
+              Sejam muito bem-vindos ao meu website. Já preparem o café e venham conhecer um pouquinho da minha história e de como tudo surgiu
             </div>
           </div>
           <!-- <div class="col-6">

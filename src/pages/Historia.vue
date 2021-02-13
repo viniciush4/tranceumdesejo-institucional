@@ -24,7 +24,7 @@
         <div class="row bg-white column flex items-center">
           <div class="q-pa-lg" style="max-width: 800px;">
             <q-img
-              src="historia/1.jpeg"
+              src="historia/9.jpeg"
               class="shadow-10"
               style="width: 300px; border-radius: 4px; float: left; margin: 0 20px 20px 0;"
             />
@@ -46,6 +46,11 @@
               em composição musical pela Universidade Federal do Espírito Santo
               (UFES).
             </p>
+            <q-img
+              src="historia/11.jpeg"
+              class="shadow-10"
+              style="width: 300px; border-radius: 4px; float: right; margin: 20px 0 20px 20px;"
+            />
             <p>
               Desde criança a arte sempre acompanhou cada passo que eu dava! Minhas
               paixões sempre foram desenhar, pintar, escrever, cantar, me aventurar
@@ -76,6 +81,11 @@
               da minha amiga dona Amanda (que hoje faz belíssimas unhas no @amandasanails) e criei um perfil
               de penteados.
             </p>
+            <q-img
+              src="historia/8.jpeg"
+              class="shadow-10"
+              style="width: 300px; border-radius: 4px; float: left; margin: 20px 20px 20px 0;"
+            />
             <p>
               Tempo vai tempo vem, pessoas foram demonstrando interesse, surgindo do absoluto nada e boom!
               Pensei comigo mesma: seria isso um sinal para eu abrir um negócio como prestadora de serviços?

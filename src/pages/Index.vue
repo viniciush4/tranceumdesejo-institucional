@@ -4,9 +4,10 @@
       <q-toolbar>
         <q-img src="logo.svg" contain :style="this.$q.screen.width > 1100 ? {'max-width': '250px', position: 'absolute', 'margin-left': '20px'} : {'max-width': '150px', 'margin-left': '10px'}" />
         <div class="full-width text-center" v-if="this.$q.screen.width > 1023">
-          <q-btn flat style="color: white" label="História" @click="$router.push({ path: '/historia' })" />
-          <q-btn flat style="color: white" label="Dicas para seu cabelinho" />
+          <q-btn flat style="color: white" label="Minha História" @click="$router.push({ path: '/historia' })" />
+          <q-btn flat style="color: white" label="Penteados" />
           <q-btn flat style="color: white" label="Pré-Agendamento" />
+          <q-btn flat style="color: white" label="Blog Capilar" />
         </div>
         <q-space v-if="this.$q.screen.width <= 1023" />
         <q-btn flat round style="color: white; margin-right: 10px" icon="menu" @click="drawer = !drawer" v-if="this.$q.screen.width <= 1023" />
@@ -91,20 +92,20 @@
         </div>
 
         <!-- NÚMEROS EXPRESSIVOS -->
-        <!-- <div :class="this.$q.screen.width > 1023 ? 'row bg-primary q-pa-xl text-white shadow-10' : 'row bg-primary q-pa-md text-white shadow-10'">
+        <div :class="this.$q.screen.width > 1023 ? 'row bg-primary q-pa-xl text-white shadow-10' : 'row bg-primary q-pa-md text-white shadow-10'">
           <div class="col-4 text-center">
             <p class="text-subtitle1" style="line-height: 1rem">atendimentos realizados</p>
             <p :class="this.$q.screen.width > 1023 ? 'text-h1 font-pacifico' : 'text-h4 font-pacifico'" style="margin: -25px 0 -5px">+600</p>
           </div>
           <div class="col-4 text-center">
             <p class="text-subtitle1" style="line-height: 1rem">noivas atendidas</p>
-            <p :class="this.$q.screen.width > 1023 ? 'text-h1 font-pacifico' : 'text-h4 font-pacifico'" style="margin: -25px 0 -5px">+50</p>
+            <p :class="this.$q.screen.width > 1023 ? 'text-h1 font-pacifico' : 'text-h4 font-pacifico'" style="margin: -25px 0 -5px">+100</p>
           </div>
           <div class="col-4 text-center">
             <p class="text-subtitle1" style="line-height: 1rem">cursos ministrados</p>
             <p :class="this.$q.screen.width > 1023 ? 'text-h1 font-pacifico' : 'text-h4 font-pacifico'" style="margin: -25px 0 -5px">+10</p>
           </div>
-        </div> -->
+        </div>
 
         <!-- RODAPÉ -->
         <div class="row justify-center q-px-md" style="width: 100%;">

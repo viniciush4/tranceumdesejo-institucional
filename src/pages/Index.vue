@@ -5,9 +5,9 @@
         <q-img src="logo.svg" contain :style="this.$q.screen.width > 1100 ? {'max-width': '250px', position: 'absolute', 'margin-left': '20px'} : {'max-width': '150px', 'margin-left': '10px'}" />
         <div class="full-width text-center" v-if="this.$q.screen.width > 1023">
           <q-btn flat style="color: white" label="Minha História" @click="$router.push({ path: '/historia' })" />
-          <q-btn flat style="color: white" label="Penteados" />
+          <q-btn flat style="color: white" label="Penteados" @click="$router.push({ path: '/penteados' })" />
           <q-btn flat style="color: white" label="Pré-Agendamento" @click="$router.push({ path: '/pre-agendamento' })" />
-          <q-btn flat style="color: white" label="Blog" />
+          <q-btn flat style="color: white" label="Blog" @click="$router.push({ path: '/blog' })" />
         </div>
         <q-space v-if="this.$q.screen.width <= 1023" />
         <q-btn flat round style="color: white; margin-right: 10px" icon="menu" @click="drawer = !drawer" v-if="this.$q.screen.width <= 1023" />
@@ -27,20 +27,20 @@
       </q-toolbar>
       <div class="full-height flex justify-center column">
         <div>
-          <div @click="$router.push({ path: '/historia' })">
+          <div class="cursor-pointer" @click="$router.push({ path: '/historia' })">
             <p class="text-uppercase text-white q-px-md text-h6">Minha História</p>
             <p class="text-white q-px-md">Conheça um pouquinho da minha trajetória até aqui</p>
           </div>
-          <div class="q-mt-xl" @click="$router.push({ path: '/pre-agendamento' })">
+          <div class="q-mt-xl cursor-pointer" @click="$router.push({ path: '/penteados' })">
             <p class="text-uppercase text-white q-px-md text-h6">Penteados</p>
             <p class="text-white q-px-md">Vou te contar uns segredinhos que podem melhorar suas madeixas</p>
           </div>
-          <div class="q-mt-xl">
-            <p class="text-uppercase text-white q-px-md text-h6">Pré-Agendamento</p>
+          <div class="q-mt-xl cursor-pointer">
+            <p class="text-uppercase text-white q-px-md text-h6" @click="$router.push({ path: '/pre-agendamento' })">Pré-Agendamento</p>
             <p class="text-white q-px-md">Quer agendar um atendimento comigo? Faça o pré-agendamento por aqui</p>
           </div>
-          <div class="q-mt-xl">
-            <p class="text-uppercase text-white q-px-md text-h6">Blog</p>
+          <div class="q-mt-xl cursor-pointer">
+            <p class="text-uppercase text-white q-px-md text-h6" @click="$router.push({ path: '/blog' })">Blog</p>
             <p class="text-white q-px-md">Vou te contar uns segredinhos que podem melhorar suas madeixas</p>
           </div>
         </div>

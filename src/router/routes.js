@@ -12,6 +12,14 @@ const routes = [
     path: '/pre-agendamento',
     component: () => import('pages/PreAgendamento.vue')
   },
+  {
+    path: '/penteados',
+    component: () => import('pages/Penteados.vue')
+  },
+  {
+    path: '/blog',
+    component: () => import('pages/Blog.vue')
+  },
 
   // Always leave this as last one,
   // but you can also remove it

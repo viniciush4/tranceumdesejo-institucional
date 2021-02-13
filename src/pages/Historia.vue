@@ -71,7 +71,7 @@
             </p>
             <p>
               Mas eu não fazia cabelos e nem via essa habilidade como uma profissão
-              futura. Eu costumava trançar os minhas próprias madeixas e as das minhas
+              futura. Eu costumava trançar as minhas próprias madeixas e as das minhas
               colegas quando elas solicitavam (principalmente nos torneios de futsal e
               handebol), mas não era nada demais. Porque afinal, sabemos que mulheres e
               meninas ao redor do mundo, incluindo você, já se aventuram pelo menos uma vez,

@@ -36,7 +36,7 @@
             <p>
               Pois foi exatamente dessa forma que meu caminho foi trilhado,
               um tanto quanto aleatoriamente. Ou talvez me arriscaria dizer que,
-              nas entrelinhas, me futuro sempre esteve ali.
+              nas entrelinhas, meu futuro sempre esteve ali.
             </p>
             <p>
               Para quem está chegando agora, seja muito bem vindo! Meu nome é

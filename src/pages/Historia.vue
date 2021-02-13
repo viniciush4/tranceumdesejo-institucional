@@ -96,10 +96,9 @@
               um portfólio de ideais.
             </p>
             <p>
-              No início eu exitei, visto que pra mim, já tinha muita gente fazendo penteados maravilhosos
-              por aí e eu mal seria notada na fila do pão. Entretanto, um tempo depois, eu cedi ao incentivo
-              da minha amiga dona Amanda (que hoje faz belíssimas unhas no @amandasanails) e criei um perfil
-              de penteados.
+              No início eu exitei, visto que pra mim, já tinha muita gente fazendo penteados maravilhosos por aí
+              e eu mal seria notada na fila do pão. Entretanto, um tempo depois, eu cedi ao incentivo da minha amiga
+              (dona Amanda) e criei um perfil de penteados.
             </p>
             <p>
               Tempo vai tempo vem, pessoas foram demonstrando interesse, surgindo do absoluto nada e boom!
